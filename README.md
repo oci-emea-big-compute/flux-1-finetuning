@@ -74,7 +74,8 @@ Then you execute the training with
 ```
 
 Parallel training is possible using Accelerate (the Deepspeed implementation on Flux is buggy at the time of writing.
-When more GPUs are used, the batch size is increased automatically, so the number os steps required to process one full epoch is riduces proportionally.
+When more GPUs are used, the batch size is increased automatically, so the number os steps required to process one full epoch is riduced proportionally.
+
 
 If present the Accelerate configuration will be taken from the config file in
 
@@ -98,6 +99,12 @@ tpu_env: []
 tpu_use_cluster: false
 tpu_use_sudo: false
 use_cpu: false
+```
+
+If this file is not present you can create a file config/config.env and use it to set this environmental variable:
+
+```
+TRAINING_NUM_PROCESSES=4
 ```
 
 
