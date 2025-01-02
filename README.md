@@ -36,5 +36,14 @@ WIP
 you can take 10 pictures of yourself .
 
 
+## Training
+
+Aitoolkit has a large set of options that can be exploited to train a lora model for flux1. You can fin examples in the directory config/examples/.
+According to the different GPUs you can use them to eitther reduce video memory consumption, or to improve training performance. 
+
+
+
+
+
 
 
