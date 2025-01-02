@@ -13,6 +13,7 @@ There are several projects that can be used to work with flux models
 Prerequisites: 
 - Linux based GPU VM with recent Nvidia driver and Cuda toolkit
 - git, Miniconda installed
+- An account in HuggingFace where you can login with huggingface-cli login
 
 ## Installing AI toolkit ##
 
