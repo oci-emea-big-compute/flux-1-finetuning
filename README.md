@@ -50,6 +50,17 @@ According to the different GPUs you can use them to eitther reduce video memory 
 - batch_size: 1 increasing batch size on a single GPU deteriorates performance, recommended to stick with 1.
 -  
 
+## Installing ComfyUI
+
+ComfyUI can be used the test the generated lora model. It can be installed in the same conda env as Attoolkit
+
+```
+git clone https://github.com/comfyanonymous/ComfyUI/tree/v0.3.10
+cd ComfyUI
+python main.py
+```
+
+
 
 
 
