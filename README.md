@@ -73,6 +73,33 @@ Then you execute the training with
 ./train.sh
 ```
 
+Parallel training is possible using Accelerate (the Deepspeed implementation on Flux is buggy at the time of writing.
+When more GPUs are used, the batch size is increased automatically, so the number os steps required to process one full epoch is riduces proportionally.
+
+If present the Accelerate configuration will be taken from the config file in
+
+~/.cache/huggingface/accelerate/default_config.yaml
+
+```
+compute_environment: LOCAL_MACHINE
+debug: false
+distributed_type: *MULTI_GPU*
+downcast_bf16: 'no'
+enable_cpu_affinity: true
+gpu_ids: all
+machine_rank: 0
+main_training_function: main
+mixed_precision: bf16
+num_machines: 1
+num_processes: 4
+rdzv_backend: static
+same_network: true
+tpu_env: []
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false
+```
+
 
 
 
