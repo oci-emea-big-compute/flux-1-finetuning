@@ -42,6 +42,14 @@ Aitoolkit has a large set of options that can be exploited to train a lora model
 According to the different GPUs you can use them to eitther reduce video memory consumption, or to improve training performance. 
 
 
+- folder_path: "/path/to/images/folder" , speicfy where the dataset is
+- gradient_checkpointing: true  This feature allows to reduce memory footprint, but this increases computation time by about 35%. On large memory GPUs it is convenient to set it to false.
+- model:quantize: true  This uses intermediate 8bit quantization to reduce memory footprint, the final model will still be 16bits, so turn it on only on small GPUs.
+- model:low_vram: true  This further reduces memory footprint on very small GPUs.
+- prompts: this is a list of prompts that are used the create intermidiate images to chck quality, for analyzing performances you can remove them    
+- batch_size: 1 increasing batch size on a single GPU deteriorates performance, recommended to stick with 1.
+-  
+
 
 
 
