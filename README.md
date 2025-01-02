@@ -9,3 +9,32 @@ There are several projects that can be used to work with flux models
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI) is a powerful and user-friendly tool for creating high-quality images using AI, including the FLUX model. It offers a modular workflow design that allows users to create custom image generation processes by connecting different components
 - [AItoolkit](https://github.com/comfyanonymous/ComfyUI) is a tool that simplifies Flux fine tuning experience expoecially to reduce VRAM requirements. 
 - [SimpleTuner](https://github.com/bghira/SimpleTuner) is a set of scripts that simplify distributed fine tuning on multiple GPUs 
+
+Prerequisites: 
+- Linux based GPU VM with recent Nvidia driver and Cuda toolkit
+- git, Miniconda installed
+
+## Installing AI toolkit ##
+
+use aitoolkit.yaml  to prepare a conda environment with the required packages 
+
+```
+conda create env -f aitoolkit.yaml
+conda activate aitoolkit
+```
+
+then you can clone the ai-toolkit 
+```
+git clone https://github.com/ostris/ai-toolkit.git
+cd ai-toolkit
+git submodule update --init --recursive
+```
+
+## Dataset generation ##
+
+WIP
+you can take 10 pictures of yourself .
+
+
+
+
