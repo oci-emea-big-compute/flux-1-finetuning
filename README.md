@@ -60,6 +60,18 @@ cd ComfyUI
 python main.py
 ```
 
+## Installing SimpleTuner
+
+```
+git clone --branch=release https://github.com/bghira/SimpleTuner.git
+```
+Copy config/config.json.example to config/config.json
+
+Then you execute the training with
+
+```
+./train.sh
+```
 
 
 
