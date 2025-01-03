@@ -66,6 +66,8 @@ You can connect to the ComfyUI GUI by pointing your browser to port 8188, accord
 Then you need to import models that are required by the workflow.
 
 Download the [Clip Safetensor](https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/clip_l.safetensors) to ComfyUI/models/clip/
+This model plays a crucial role in text-to-image generation tasks by processing and encoding textual input.
+
 Download the [T5xxl Safetensor](https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/t5xxl_fp8_e4m3fn.safetensors) to ComfyUI/models/clip/
 Download the [VAE Safetensor](https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors) to ComfyUI/models/vae
 Download the [Flux.1-dev UNET model](https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main) to ComfyUI/models/unet
