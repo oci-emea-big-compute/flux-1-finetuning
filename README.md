@@ -49,7 +49,7 @@ According to the different GPUs you can use them to eitther reduce video memory 
 - model:low_vram: true  This further reduces memory footprint on very small GPUs.
 - prompts: this is a list of prompts that are used the create intermidiate images to chck quality, for analyzing performances you can remove them    
 - batch_size: 1 increasing batch size on a single GPU deteriorates performance, recommended to stick with 1.
--  
+- trigger_word: a GPU Specialist   Here you set the keyword that you can use in the prompt.
 
 ## Installing ComfyUI
 
@@ -72,14 +72,14 @@ Download the [Flux.1-dev UNET model](https://huggingface.co/black-forest-labs/FL
 
 ## Testing Lora models with ComfyUI
 
-veytime you create a lora model with Ai-toolkit you can copy it to ComfyUI/models/lora 
+Everytime you create a lora model with Ai-toolkit you can copy it to ComfyUI/models/lora 
 
 Import the workflow by opening the file workflow-lora.json 
 
 You will then be able to select the model in the Load Lora box. Make sure also the proper models are selected in the Load diffusion Model, DualCLIPLoader, and Load VAE boxes.
 
 You can write your own prompt in the CLIP Text Encode box, remeber to refer to the keyword used for training the Lora.
-
+![Alt text](ComfyUI.png?raw=true "ComfyUI Lora workflow")
 
 ## Installing SimpleTuner
 
