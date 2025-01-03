@@ -61,6 +61,26 @@ cd ComfyUI
 python main.py
 ```
 
+You can connect to the ComfyUI GUI by pointing your browser to port 8188, according to the network configuration a port forward might be required. 
+
+Then you need to import models that are required by the workflow.
+
+Download the [Clip Safetensor](https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/clip_l.safetensors) to ComfyUI/models/clip/
+Download the [T5xxl Safetensor](https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/t5xxl_fp8_e4m3fn.safetensors) to ComfyUI/models/clip/
+Download the [VAE Safetensor](https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors) to ComfyUI/models/vae
+Download the [Flux.1-dev UNET model](https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main) to ComfyUI/models/unet
+
+## Testing Lora models with ComfyUI
+
+veytime you create a lora model with Ai-toolkit you can copy it to ComfyUI/models/lora 
+
+Import the workflow by opening the file workflow-lora.json 
+
+You will then be able to select the model in the Load Lora box. Make sure also the proper models are selected in the Load diffusion Model, DualCLIPLoader, and Load VAE boxes.
+
+You can write your own prompt in the CLIP Text Encode box, remeber to refer to the keyword used for training the Lora.
+
+
 ## Installing SimpleTuner
 
 ```
